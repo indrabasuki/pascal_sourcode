@@ -1,0 +1,21 @@
+program cal ;
+uses crt;
+var x,y,hasil:real;
+answer:char;
+begin
+write ('masukan angka ke-1:');
+readln (x);
+write ('pilih operator: (+)/(-)/(*)/(/)');
+readln (answer);
+write ('masukan angka ke-2:');
+readln (y);
+if ( answer= '+') then begin
+hasil:= x+y end;
+if ( answer = '-')then begin 
+hasil:= x-y end; 
+if ( answer = '*') then begin
+hasil:= x*y end; 
+if (answer ='/') then begin
+hasil:= x/y end;
+write ('hasilnya: ',(hasil):5:2);readln();
+end
