@@ -1,0 +1,40 @@
+program cash;
+uses crt;
+var
+a,x,total,total2,jmluang,back:integer;
+npm:string;
+name:array[1..100] of string[20];
+price,qty: array[1..100] of integer;
+begin
+clrscr;
+write('masukan jumlah item :  ');readln(x);
+    for a := 1 to x do
+      begin
+        write('input nama produk ',a,' : ');readln(name[a]);
+        write('input harga produk ',a,' : ');readln(price[a]);
+        write('input jumlah barang ',a,' : ');readln(qty[a]);
+        writeln(' ');
+      end;
+writeln(' ');
+writeln(' ');
+
+    for a := 1 to x do
+      begin
+        writeln('nama barang   = ',name[a]);
+        writeln('jumlah barang = ',qty[a]);
+        writeln('harga barang. = Rp.' ,price[a],'-');
+        total :=qty[a]*price[a];
+        writeln('total harga = RP.' ,total,'-');
+        total2 := total2+qty[a]*price[a]
+      end;
+writeln(' ');
+writeln('Total belanja : ',total2);
+writeln(' ');
+write('Jumlah uang yg diserahkan: ');readln(jmluang);
+writeln('Jumlah bayar : ',total2);
+back := jmluang-total2;
+writeln('Kembali : ',back);
+writeln(' ');
+write('Terima Kasih');readln;
+
+end.
