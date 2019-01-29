@@ -1,0 +1,13 @@
+Program Luas_Ppanjang;
+uses crt;
+Var l,p:integer;
+luas:real;
+begin
+//by:indra basuki
+clrscr;
+write('masukkan Nilai Panjang : ');readln(p);
+write('masukan nilai lebar.   : ');readln(l);
+luas:=p*l;
+writeln('Nilai Luas Persegi Panjang= ',luas);
+readln;
+end.
