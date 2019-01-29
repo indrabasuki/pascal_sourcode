@@ -1,0 +1,17 @@
+program circle;
+uses crt; 
+const pi =3.14;
+var
+ r : integer; 
+ luas, kel : real; 
+ begin 
+ writeln ('HITUNG KELILING & LUAS LINGKARAN');
+ writeln ('================================'); 
+ write ('Jari-jari : '); 
+ readln(r); 
+ luas := pi * r * r;
+ kel :=2 * pi * r;
+ writeln ('Luas : ',luas:2:2); 
+ writeln ('Keliling : ',kel:2:2);readln(); 
+ Readkey; 
+ end.
