@@ -1,0 +1,16 @@
+program trapesium;
+uses crt;
+Var
+sisi_a,sisi_b,tinggi,luas:real;
+Begin
+clrscr;
+write ('masukkan sisi pertama :');
+readln (sisi_a);
+write('masukkan sisi kedua   :');
+readln(sisi_b);
+write ('masukkan tinggi       :');
+readln(tinggi);
+Luas:=(sisi_a+sisi_b)/2*tinggi;
+writeln('Luas Trapesium adalah :',Luas:8:2);
+readln;
+end.
