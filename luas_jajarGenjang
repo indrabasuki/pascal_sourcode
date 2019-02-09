@@ -1,0 +1,16 @@
+Program Jajargenjang;
+Uses Crt;
+Var
+Alas,Tinggi:Integer;
+Luas :Real;
+Begin
+Clrscr;
+Write('Masukkan Alas = ');
+Readln(alas);
+Write('Masukkan Tinggi = ');
+Readln(tinggi);
+Luas := alas * tinggi;
+Writeln('Luas Jajargenjang = ',luas);
+writeln('Terima Kasih');
+Readln;
+End.
