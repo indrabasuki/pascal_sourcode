@@ -1,0 +1,11 @@
+program luas_layanglayang;
+uses crt;
+var d1,d2,L:Real;
+begin
+write('Masukkan Diagonal1 Layang-layang(cm):'); readln (d1);
+write('Masukkan Diagonal2 Layang-layang(cm):'); readln (d2);
+L:=1/2*d1*d2;
+writeln;
+writeln('Luas Layang-layang adalah =',L:10:2,'cm2');
+readln;
+end.
