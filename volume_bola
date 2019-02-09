@@ -1,0 +1,17 @@
+Program VolumeBola;
+Uses crt;
+Var
+jari_jari,volume:real;
+Begin
+clrscr;
+Writeln('%______________%');
+WriteLn('%             Mengitung Volume Bola        %');
+WriteLn('');
+writeln('');
+
+writeln ('masukkan jari-jari :');
+readln (jari_jari);
+volume:=jari_jari*jari_jari*4/3*pi;
+writeln('Volume Bola adalah :',volume:8:2);
+readln;
+end.
